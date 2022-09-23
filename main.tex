@@ -1,0 +1,73 @@
+\documentclass[12pt]{amsart}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{ebproof}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue
+}
+
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{question}[theorem]{Question}
+\newtheorem{caution}[theorem]{Caution}
+
+\begin{document}
+
+\title{Homework 3}
+
+\maketitle
+
+\begin{enumerate}
+	\item Give natural deduction proof of the formula
+	\begin{displaymath}
+		(A \leftrightarrow B) \leftrightarrow (A \to B) \land (\neg A \to \neg B)
+	\end{displaymath}
+
+	\item Show that $(A \to B) \to (B \to A)$ cannot be proven. Given example statements 
+		for $A$ and $B$ where $A \to B$ is true but $B \to A$ is not. Can you make 
+		them mathematical statements?
+
+	\item A formula is in \textit{conjunctive normal form} if it is written as 
+	\begin{displaymath}
+		X_1 \land X_2 \land \cdots \land X_n 
+	\end{displaymath}
+	where each 
+	\begin{displaymath}
+		X_i = Y^1_i \lor \cdots \lor Y^j_i
+	\end{displaymath}
+	and each $Y^l_i$ is either $\neg A$ or $A$ for some propositional variable $A$. 
+	Which of the following are in conjunctive normal form:
+	\begin{itemize}
+		\item $$ \neg (A \lor B) $$
+		\item $$ \neg A \land (B \lor C)$$
+		\item $$ \neg A \lor \neg B \land C$$ 
+		\item $$ (A \land B) \lor C$$
+	\end{itemize}
+
+	\item It is a fact that any formula in propositional logic can be rewritten in 
+		conjunctive normal form up to bi-implication. Rewrite the following formula 
+		in conjunctive normal form up to bi-implication. 
+	\begin{itemize}
+		\item $$A \land (B \lor (C \land D))$$ 
+		\item $$\neg (A \land (B \lor C))$$
+		\item $$(A \to B) \lor C$$ 
+	\end{itemize}
+		
+		
+\end{enumerate}
+
+\end{document}
