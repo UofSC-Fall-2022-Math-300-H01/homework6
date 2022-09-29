@@ -10,7 +10,7 @@ FROM mcr.microsoft.com/vscode/devcontainers/base:0-${VARIANT}
 
 # Install LaTeX
 RUN sudo apt-get -q update && \
-    sudo apt-get install -yq texlive-latex-extra latexmk && \ 
+    sudo apt-get install -yq texlive-latex-full latexmk && \ 
     sudo rm -rf /var/lib/apt/lists/*
 
 # Install Lean 
